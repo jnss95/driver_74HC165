@@ -1,6 +1,6 @@
 mcu = atmega328p
 baud = 9600
-cpu_clock = 8000000UL
+cpu_clock = 16000000UL
 target = build
 
 builddir = build
