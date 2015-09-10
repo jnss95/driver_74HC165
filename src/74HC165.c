@@ -13,6 +13,8 @@ void shift_init(void)
 
 uint8_t shift_in(void)
 {
+	PORT_LD |= (1<<BIT_LD);
+	PORT_LD &= ~(1<<BIT_LD);
 	uint8_t ret;
 	for(int i=0;i<8;i++){
 		PORT_CLK |= (1<<BIT_CLK);
